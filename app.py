@@ -1,11 +1,10 @@
 from flask import Flask, request, jsonify
 from flask.logging import create_logger
 import logging
-import os
 
 import pandas as pd
-# from sklearn.externals import joblib
 from sklearn.externals import joblib
+#import joblib
 from sklearn.preprocessing import StandardScaler
 
 app = Flask(__name__)
@@ -57,9 +56,7 @@ def predict():
     """
 
     try:
-        filename = os.path.join(os.path.dirname(__file__), 'model_data/boston_housing_prediction.joblib')
-        LOG.info(f'loading file {filename}')
-        clf = joblib.load(filename)
+        clf = joblib.load("boston_housing_prediction.joblib")
     except:
         LOG.info("JSON payload: %s json_payload")
         return "Model not loaded"
@@ -73,7 +70,4 @@ def predict():
     return jsonify({'prediction': prediction})
 
 if __name__ == "__main__":
-    # clf = joblib.load("./model_data/boston_housing_prediction.joblib")
-    filename = os.path.join(os.path.dirname(__file__), 'model_data/boston_housing_prediction.joblib')
-    LOG.info(f'loading file {filename}')
     app.run(host='0.0.0.0', port=5000, debug=True)
