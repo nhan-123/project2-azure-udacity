@@ -1,6 +1,6 @@
 Flask
 pandas
 numpy
-scikit-learn==0.20.3
+scikit-learn==1.0.2
 pylint
 pytest
