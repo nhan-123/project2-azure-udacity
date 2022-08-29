@@ -1,1 +1,5 @@
-This repo contains the starter materials for projects from the Udacity Azure Cloud DevOps Nanodegree Program.
+# flask-ml-service
+A sample Flask application to showcase the Azure Pipeline.
+
+## Environment
+Python 3.7
