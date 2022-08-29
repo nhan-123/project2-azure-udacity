@@ -7,12 +7,10 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv tests/app.py
-	#python -m pytest --nbval notebook.ipynb
+	python -m pytest -vv test_hello.p
 
 
 lint:
-	#hadolint Dockerfile #uncomment to explore linting Dockerfiles
-	pylint --disable=R,C app.py
+	pylint --disable=R,C hello.py
 
 all: install lint test
