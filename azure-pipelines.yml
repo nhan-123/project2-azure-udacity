@@ -3,7 +3,7 @@
   inputs:
     azureSubscription: 'myserviceconn30082022'
     appType: 'webAppLinux'
-    appName: 
+    appName: 'mywebapp30082022'
     deployToSlotOrASE: true
     resourceGroupName: 'Azuredevops'
     slotName: 'production'
