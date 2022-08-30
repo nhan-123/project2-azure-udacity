@@ -1,4 +1,15 @@
 # Starter pipeline    
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'myserviceconn30082022'
+    appType: 'webAppLinux'
+    appName: 
+    deployToSlotOrASE: true
+    resourceGroupName: 'Azuredevops'
+    slotName: 'production'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    runtimeStack: 'PYTHON|3.7'
+    startUpCommand: 'python app.py'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -13,7 +24,7 @@ variables:
   azureServiceConnectionId: 'myserviceconnection'
   
   # TODO: Replace 'mywebapp193576' with the existing Web App name
-  webAppName: 'mywebapp29082022'
+  webAppName: 'mywebapp30082022'
 
   # Environment name
   environmentName: 'flask-ml-service'
