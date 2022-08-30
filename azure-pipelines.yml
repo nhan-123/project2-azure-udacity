@@ -1,5 +1,5 @@
 # Starter pipeline    
-- task: AzureWebApp@1
+- task: AzureWebApp1
   inputs:
     azureSubscription: 'myserviceconn30082022'
     appType: 'webAppLinux'
@@ -17,7 +17,7 @@ trigger:
 - master
 
 # TODO: Replace the agent pool name
-pool: myagentpool
+pool: myAgentPool
 
 variables:
   # TODO: Replace the service connection name
