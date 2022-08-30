@@ -1,27 +1,16 @@
-# Starter pipeline    
-- task: AzureWebApp1
-  inputs:
-    azureSubscription: 'myserviceconn30082022'
-    appType: 'webAppLinux'
-    appName: 'mywebapp30082022'
-    deployToSlotOrASE: true
-    resourceGroupName: 'Azuredevops'
-    slotName: 'production'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
-    runtimeStack: 'PYTHON|3.7'
-    startUpCommand: 'python app.py'
+ Starter pipeline    
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 trigger:
-- main
+- master
 
 # TODO: Replace the agent pool name
 pool: myAgentPool
 
 variables:
   # TODO: Replace the service connection name
-  azureServiceConnectionId: 'myserviceconnection'
+  azureServiceConnectionId: 'myserviceconn30082022'
   
   # TODO: Replace 'mywebapp193576' with the existing Web App name
   webAppName: 'mywebapp30082022'
