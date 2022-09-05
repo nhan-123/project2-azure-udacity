@@ -1,3 +1,4 @@
+[![Python application test with Github Actions](https://github.com/nhan-123/project2-azure-udacity/actions/workflows/main.yml/badge.svg)](https://github.com/nhan-123/project2-azure-udacity/actions/workflows/main.yml)
 # flask-ml-service
 A sample Flask application to showcase the Azure Pipeline.
 
