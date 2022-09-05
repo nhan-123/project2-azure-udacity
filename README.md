@@ -6,6 +6,11 @@ A sample Flask application to showcase the Azure Pipeline.
 Python 3.7
 # Overview
 In this project, you will build a Github repository from scratch and create a scaffolding that will assist you in performing both Continuous Integration and Continuous Delivery. You'll use Github Actions along with a Makefile, requirements.txt and application code to perform an initial lint, test, and install cycle. Next, you'll integrate this project with Azure Pipelines to enable Continuous Delivery to Azure App Service.
+# Project plan
+* The link to a Trello board for the project: https://trello.com/b/qveRRkUp/my-plan  
+* The link to a spreadsheet that includes the original and final project plan: https://docs.google.com/spreadsheets/d/1jq0XmB-HsapoLsMFeLn3Xvq11SSmmy6BV9hXS5VJtM4/edit#gid=0  
+
+
 # Continuous Delivery on Azure
 
 ## 1. Set up azure cloud shell
@@ -315,6 +320,8 @@ stages:
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
 ```
 ![image](https://user-images.githubusercontent.com/61376012/187738853-6af9f6ed-0659-46c8-8b41-f3c8e5dcaf6a.png)
+
+# Enhancements
 
 
 
