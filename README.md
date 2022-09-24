@@ -9,7 +9,7 @@ In this project, you will build a Github repository from scratch and create a sc
 # Project plan
 * The link to a Trello board for the project: https://trello.com/b/qveRRkUp/my-plan  
 * The link to a spreadsheet that includes the original and final project plan: https://docs.google.com/spreadsheets/d/1jq0XmB-HsapoLsMFeLn3Xvq11SSmmy6BV9hXS5VJtM4/edit#gid=0  
-* The link youtube: https://youtu.be/ZQHVrHxEK18
+
 
 
 # Continuous Delivery on Azure
@@ -326,11 +326,10 @@ stages:
 
 # Enhancements
 
+In the process of deploying project, i have some difficulty with test I things in the future, i must create new branch and new environment for test  
 
-
-
-
-
+# Demo
+* The link youtube: https://youtu.be/ZQHVrHxEK18
  
 
 
