@@ -100,7 +100,7 @@ def test_hello_subtract():
 ## Local Test
 Now it is time to run make all which will install, lint, and test code. This enables us to ensure we don't check in broken code to GitHub as it installs, lints, and tests the code in one command. Later we will have a remote build server perform the same step.
 ![image](https://user-images.githubusercontent.com/61376012/187730347-3c64347d-9f05-485e-a98f-01128308ccbf.png)  
-![image](https://user-images.githubusercontent.com/61376012/192128006-366587fd-0ee5-4a8f-83be-0a4e960f446b.png)
+
 
 ## 2. Configure GitHub Actions
 ## Enable Github Actions
@@ -189,6 +189,8 @@ Perform Prediction
 ```
 ![image](https://user-images.githubusercontent.com/61376012/187735980-3f628f59-6360-4f13-8980-2660327b970a.png)  
 
+Perform Locust test  
+![image](https://user-images.githubusercontent.com/61376012/192128006-366587fd-0ee5-4a8f-83be-0a4e960f446b.png)
 ## Azure pipline agent
 Create a Personal Access Token (PAT)  
 ![image](https://user-images.githubusercontent.com/61376012/187736336-9268aa62-f337-4c76-ad2f-cc1566dbd139.png)
