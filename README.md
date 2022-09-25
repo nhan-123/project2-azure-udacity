@@ -10,6 +10,11 @@ In this project, you will build a Github repository from scratch and create a sc
 * The link to a Trello board for the project: https://trello.com/b/qveRRkUp/my-plan  
 * The link to a spreadsheet that includes the original and final project plan: https://docs.google.com/spreadsheets/d/1jq0XmB-HsapoLsMFeLn3Xvq11SSmmy6BV9hXS5VJtM4/edit#gid=0  
 
+# Intructions
+This diagram shows how code can be tested automatically by enabling GitHub Actions. The push change to GitHub triggers the GitHub Actions container, which in turn runs a series of commands.  
+
+![image](https://user-images.githubusercontent.com/61376012/192126512-d1835585-3000-42c0-8713-95b6900c92ef.png)
+
 
 
 # Continuous Delivery on Azure
